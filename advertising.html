@@ -5,102 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OtakuTokyo</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<head>
-<style>
-body {
-  background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+   <link rel="shortcut icon" href="/images/otakutokyo.PNG" type="image/x-icon" />
+    <style>
+        body {
+            background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.PNG");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 5000px;
+            padding-top: 60px;
+        }
 
-h1 {
-  font-family: denmark, sans-serif;
-  font-size: 65px;
-  color: white;
-  text-align: center;
-}
+         #logo {
+            display: inline-block;
+            margin: 20px;
+            float: left;
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+         }
 
-h2 {
-  font-family: denmark;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
+        h1 {
+            font-family: denmark, sans-serif;
+            font-size: 65px;
+            color: white;
+            text-align: center;
+        }
 
-p {
-  font-family: Denmark;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
+        h2 {
+            font-family: denmark;
+            font-size: 30px;
+            color: white;
+            text-align: left;
+        }
 
-u {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: gold;
-}
+        h3 {
+            font-family: denmark;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
 
-header {
-font-family: denmark;
-font-size: 18px;
-color: white;
-header-align: to top right;
-}
+        p {
+            font-family: Denmark;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            text-indent: 0;
+        }
+        p.a {
+            text-align-last: right;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
+        p.b {
+            text-align-last: left;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
 
-ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+        p.c {
+            text-align-last: center;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
+        
+        u {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: gold;
+        }
 
-li {
-  float: right;
-}
+        .header {
+            position: fixed
+            font-family: denmark;
+            font-size: 18px;
+            color: white;
+            text-align: right;
+            top: 0;
+            width: 100%
+            z-index: 9999; 
+        }
 
-li a {
-  display: block;
-  color: gold;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
 
-li a:hover {
-  background-color: grey;
-}
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
- .wrap {
-   float: right; 
-   margin: 5px;
-}
+        li {
+            float: right;
+        }
 
-</style>
+        .navbar a {
+            float: right;
+            display: block;
+            color: gold;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: grey;
+        }
+        #navbar ul {
+            display: flex;
+            margin: 5px;
+        }
+
+        #navbar li {
+            padding: 12px;
+        }
+        .wrap {
+            float: right;
+            margin: 5px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+        
+        #parent {
+            width: 30%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 <header>
 <nav>
 <ul>
-<li><a href="#advertising">Ads</a></li>
-<li><a href="#media">Media</a></li>
-<li><a href="#Quiz">quiz</a></li>
-<li><a href="#Japan travel">Japan travel</a></li>
-<li><a href="#Japanese folk tales">Japanese Tales</a></li>
-<li><a href="#Uk Anime conventions">UK Con list</a></li>
-<li><a href="#Games">Games</a></li>
-<li><a href="#Latest Cosplay News">Cosplay news</a></li>
-<li><a href="#Latest Anime News">Anime news</a></li>
-<li><a href="#History">History</a></li>
-<li><a href="#home">Home</a></li>
+    <div class="header">
+        <ul class="navbar">   
+            <li><a class="nav-link" href="#advertising">Ads</a></li>
+            <li><a class="nav-link" href="#forum">Forum</a></li>   
+            <li><a class="nav-link" href="#media">Media</a></li>
+            <li><a class="nav-link" href="#quiz">Quiz</a></li>
+            <li><a class="nav-link" href="#japantravel">Japan Travel</a></li>
+            <li><a class="nav-link" href="#japanesefolktales">Japanese Tales</a></li>
+            <li><a class="nav-link" href="#ukanimeconventions">UK Con List</a></li>
+            <li><a class="nav-link" href="#games">Games</a></li>
+            <li><a class="nav-link" href="#latestcosplaynews">Cosplay News</a></li>
+            <li><a class="nav-link" href="#latestanimenews">Anime News</a></li>
+            <li><a class="nav-link" href="#history">History</a></li>                                  
+            <li><a class="nav-link" href="#home">Home</a></li>
+        </div>  
 </ul>
 </nav>
 </header>
