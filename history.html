@@ -124,7 +124,14 @@
         .navbar a:hover {
             background-color: grey;
         }
+        #navbar ul {
+            display: flex;
+            margin: 5px;
+        }
 
+        #navbar li {
+            padding: 12px;
+        }
         .wrap {
             float: right;
             margin: 5px;
@@ -149,21 +156,20 @@
 <nav>
 <ul>
     <div class="header">
-        <div class="navbar"> 
-            <li><a href="forum.html">Forum</a></li>  
-            <li><a href="advertising.html">Ads</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="japantravel.html">Japan Travel</a></li>
-            <li><a href="japanesefolktales.html">Japanese Tales</a></li>
-            <li><a href="ukanimeconventions.html">UK Con List</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="latestcosplaynews.html">Cosplay News</a></li>
-            <li><a href="latestanimenews.html">Anime News</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="index.html">Home</a></li>
-        </div>
-    </div>
+        <ul class="navbar">   
+            <li><a class="nav-link" href="#advertising">Ads</a></li>
+            <li><a class="nav-link" href="#forum">Forum</a></li>   
+            <li><a class="nav-link" href="#media">Media</a></li>
+            <li><a class="nav-link" href="#quiz">Quiz</a></li>
+            <li><a class="nav-link" href="#japantravel">Japan Travel</a></li>
+            <li><a class="nav-link" href="#japanesefolktales">Japanese Tales</a></li>
+            <li><a class="nav-link" href="#ukanimeconventions">UK Con List</a></li>
+            <li><a class="nav-link" href="#games">Games</a></li>
+            <li><a class="nav-link" href="#latestcosplaynews">Cosplay News</a></li>
+            <li><a class="nav-link" href="#latestanimenews">Anime News</a></li>
+            <li><a class="nav-link" href="#history">History</a></li>                                  
+            <li><a class="nav-link" href="#home">Home</a></li>
+        </div>  
 </ul>
 </nav>
 </header>
