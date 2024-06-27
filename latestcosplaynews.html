@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OtakuTokyo</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="C:\Users\bluew\Pictures/OtakuTokyo logo no background.PNG" type-"image/x-icon" />
+   <link rel="shortcut icon" href="/images/otakutokyo.PNG" type="image/x-icon" />
     <style>
         body {
-            background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.png");
+            background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.PNG");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            min-height: 5000px;
+            padding-top: 60px;
         }
 
          #logo {
@@ -49,20 +51,47 @@
             font-size: 25px;
             text-align: center;
             color: white;
+            text-indent: 0;
+        }
+        p.a {
+            text-align-last: right;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
         }
 
+        p.b {
+            text-align-last: left;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
+
+        p.c {
+            text-align-last: center;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
+        
         u {
             text-decoration-line: underline;
-            text-decoration-style: wavy;
+            text-decoration-style: solid;
             text-decoration-color: gold;
         }
 
         .header {
+            position: fixed
             font-family: denmark;
             font-size: 18px;
             color: white;
             text-align: right;
             top: 0;
+            width: 100%
+            z-index: 9999; 
         }
 
         ul {
@@ -70,7 +99,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color:;
+            background-color: black;
         }
 
         ul {
@@ -108,12 +137,15 @@
         .section.active {
             display: block;
         }
-
+        
+        #parent {
+            width: 30%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
 <header>
-<img id="logo" src="C:\Users\bluew\Pictures/OtakuTokyo logo no background.png" alt="OtakuTokyo logo no background.png" />
 <nav>
 <ul>
     <div class="header">
@@ -136,20 +168,31 @@
 </nav>
 </header>
 <main>
-<section id="home" class="section active">
-    <div class="Container">
-        <div style="text-align: to top left;">
-            <img src="C:\Users\bluew\Pictures/OtakuTokyo.gif" width="800" height="168" />
-        </div>
-        <h1>Welcome!</h1>
-        <p>Dive into the vibrant world of anime, manga, and cosplay with OtakuTokyo, your ultimate hub for all things otaku! 
-        Whether you're a seasoned fan or just beginning your journey, our community is here to celebrate the passion and creativity that anime, manga, and cosplay bring to life.</p>
-        <p>From the latest series and movie reviews to in-depth manga discussions, cosplay tips, and fan art showcases, OtakuTokyo offers a space where enthusiasts can connect, share, and explore together.
-        Join us and become part of a community that lives and breathes anime, manga, and cosplay – your adventure begins here!</p>
-        <div style="text-align: center;">
-            <img src="C:\Users\bluew\Pictures/shenron.png" width="1024" height="768" />
-        </div>
-    </div>
+<section id="latestcosplaynews" class="section">
+<div class="Container">
+<div style="text-align: center;">
+    <img src="C:\Users\bluew\Pictures/Cosplay-News-17-06-2024.gif" width="800" height="155" />
+</div>
+<section>
+        <h1><u><b>Latest Cosplay News</h1></u></b>
+
+        <h2><u><b>World Cosplay Summit 2024</h2></u></b>
+     <div class="wrap">
+  <img src="C:\Users\bluew\Pictures/loading.png" width="500" height="354" />
+      </div>
+          <p>.The World Cosplay Summit (WCS) is gearing up for its 2024 edition with an array of exciting activities and announcements. Held annually in Nagoya, Japan, this event is one of the largest and most prestigious cosplay gatherings worldwide. This year, the summit will introduce five official characters, each with unique skills and roles within the cosplay community. These characters will participate in various activities, including a new quiz game app called "OTAKU JUDGE," where players can compete in manga, anime, and cosplay-related quizzes​.</p>
+
+        <h2><u><b>Bold Matsuri 2024</h2></u></b>
+  
+          <p>.Bold Matsuri, Jacksonville, FL's annual Anime and Cosplay Festival, is scheduled for June 22-23, 2024, at The Prime F. Osborn III Convention Center. The event will feature numerous activities, including guest panels, contests, a gaming area, and cosplay-focused after-hour events. Prominent voice actors such as Justin Briner, Amber Lee Connors, and Erica Mendez will be among the guests, making it a must-attend event for cosplay enthusiasts​.</p>
+
+        <h2><u><b>Return of Nippombashi Street Festa</h2></u></b>
+
+          <p>.After a five-year hiatus due to the COVID-19 pandemic, Osaka's Nippombashi Street Festa is set to return on May 12, 2024. Known as Japan's largest cosplay event, the festival is held in Osaka's Den Den Town, a bustling area renowned for its anime, game, and manga shops. The event typically attracts over 200,000 attendees who participate in the outdoor parade, showcasing their elaborate costumes and celebrating their shared passion for cosplay​​.</p>
+          <p>.These events highlight the vibrant and dynamic nature of the cosplay community, offering fans numerous opportunities to connect, showcase their creativity, and celebrate their shared interests. Whether you're a seasoned cosplayer or new to the scene, these upcoming events are sure to provide memorable experiences.</p>
+<div style="text-align: center;">
+    <img src="C:\Users\bluew\Pictures/shenron.png" width="1024" height="768" />
+</div>
 </section>
 </main>
 <script>
