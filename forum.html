@@ -1,43 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OtakuTokyo</title>
-    <link rel="stylesheet" href="styles.css">
-   <link rel="shortcut icon" href="/images/otakutokyo.PNG" type="image/x-icon" />
-    <style>
-        body {
-            background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.PNG");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            min-height: 5000px;
-            padding-top: 60px;
-        }
-
-         #logo {
-            display: inline-block;
-            margin: 20px;
-            float: left;
-            height: 60px;
-            width: auto;
-            border-radius: 50%;
-         }
-
-        h1 {
-            font-family: denmark, sans-serif;
-            font-size: 65px;
-            color: white;
-            text-align: center;
-        }
-
-        h2 {
-            font-family: denmark;
-            font-size: 30px;
-            color: white;
-            text-align: left;
-        }
 
         h3 {
             font-family: denmark;
@@ -124,7 +84,14 @@
         .navbar a:hover {
             background-color: grey;
         }
+        #navbar ul {
+            display: flex;
+            margin: 5px;
+        }
 
+        #navbar li {
+            padding: 12px;
+        }
         .wrap {
             float: right;
             margin: 5px;
@@ -149,21 +116,20 @@
 <nav>
 <ul>
     <div class="header">
-        <div class="navbar"> 
-            <li><a href="forum.html">Forum</a></li>  
-            <li><a href="advertising.html">Ads</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="japantravel.html">Japan Travel</a></li>
-            <li><a href="japanesefolktales.html">Japanese Tales</a></li>
-            <li><a href="ukanimeconventions.html">UK Con List</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="latestcosplaynews.html">Cosplay News</a></li>
-            <li><a href="latestanimenews.html">Anime News</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="index.html">Home</a></li>
-        </div>
-    </div>
+        <ul class="navbar">   
+            <li><a class="nav-link" href="#advertising">Ads</a></li>
+            <li><a class="nav-link" href="#forum">Forum</a></li>   
+            <li><a class="nav-link" href="#media">Media</a></li>
+            <li><a class="nav-link" href="#quiz">Quiz</a></li>
+            <li><a class="nav-link" href="#japantravel">Japan Travel</a></li>
+            <li><a class="nav-link" href="#japanesefolktales">Japanese Tales</a></li>
+            <li><a class="nav-link" href="#ukanimeconventions">UK Con List</a></li>
+            <li><a class="nav-link" href="#games">Games</a></li>
+            <li><a class="nav-link" href="#latestcosplaynews">Cosplay News</a></li>
+            <li><a class="nav-link" href="#latestanimenews">Anime News</a></li>
+            <li><a class="nav-link" href="#history">History</a></li>                                  
+            <li><a class="nav-link" href="#home">Home</a></li>
+        </div>  
 </ul>
 </nav>
 </header>
