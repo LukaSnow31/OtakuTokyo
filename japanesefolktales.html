@@ -5,220 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OtakuTokyo</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<head>
-<style>
-body {
-  background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+   <link rel="shortcut icon" href="/images/otakutokyo.PNG" type="image/x-icon" />
+    <style>
+        body {
+            background-image: url("https://i.postimg.cc/9Xrn4cDn/simple-background.PNG");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 5000px;
+            padding-top: 60px;
+        }
 
-h1 {
-  font-family: denmark, sans-serif;
-  font-size: 65px;
-  color: white;
-  text-align: center;
-}
+         #logo {
+            display: inline-block;
+            margin: 20px;
+            float: left;
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+         }
 
-h2 {
-  font-family: denmark;
-  font-size: 30px;
-  color: white;
-  text-align: left;
-}
+        h1 {
+            font-family: denmark, sans-serif;
+            font-size: 65px;
+            color: white;
+            text-align: center;
+        }
 
-p {
-  font-family: Denmark;
-  font-size: 25px;
-  text-align: left;
-  color: white;
-}
+        h2 {
+            font-family: denmark;
+            font-size: 30px;
+            color: white;
+            text-align: left;
+        }
 
-u {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: gold;
-}
+        h3 {
+            font-family: denmark;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
 
-header {
-font-family: denmark;
-font-size: 18px;
-color: white;
-header-align: to top right;
-}
+        p {
+            font-family: Denmark;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            text-indent: 0;
+        }
+        p.a {
+            text-align-last: right;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
+        p.b {
+            text-align-last: left;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
 
-ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+        p.c {
+            text-align-last: center;
+            color: white;
+            font-family: Denmark;
+            font-size: 25px;
+            text-indent: 0;
+        }
+        
+        u {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: gold;
+        }
 
-li {
-  float: right;
-}
+        .header {
+            position: fixed
+            font-family: denmark;
+            font-size: 18px;
+            color: white;
+            text-align: right;
+            top: 0;
+            width: 100%
+            z-index: 9999; 
+        }
 
-li a {
-  display: block;
-  color: gold;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
 
-li a:hover {
-  background-color: grey;
-}
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
- .wrap {
-   float: right; 
-   margin: 5px;
-}
+        li {
+            float: right;
+        }
 
-</style>
+        .navbar a {
+            float: right;
+            display: block;
+            color: gold;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: grey;
+        }
+        #navbar ul {
+            display: flex;
+            margin: 5px;
+        }
+
+        #navbar li {
+            padding: 12px;
+        }
+        .wrap {
+            float: right;
+            margin: 5px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+        
+        #parent {
+            width: 30%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 <header>
 <nav>
 <ul>
-<li><a href="#advertising">Ads</a></li>
-<li><a href="#media">Media</a></li>
-<li><a href="#Quiz">quiz</a></li>
-<li><a href="#Japan travel">Japan travel</a></li>
-<li><a href="#Japanese folk tales">Japanese Tales</a></li>
-<li><a href="#Uk Anime conventions">UK Con list</a></li>
-<li><a href="#Games">Games</a></li>
-<li><a href="#Latest Cosplay News">Cosplay news</a></li>
-<li><a href="#Latest Anime News">Anime news</a></li>
-<li><a href="#History">History</a></li>
-<li><a href="#home">Home</a></li>
+    <div class="header">
+        <ul class="navbar">   
+            <li><a class="nav-link" href="#advertising">Ads</a></li>
+            <li><a class="nav-link" href="#forum">Forum</a></li>   
+            <li><a class="nav-link" href="#media">Media</a></li>
+            <li><a class="nav-link" href="#quiz">Quiz</a></li>
+            <li><a class="nav-link" href="#japantravel">Japan Travel</a></li>
+            <li><a class="nav-link" href="#japanesefolktales">Japanese Tales</a></li>
+            <li><a class="nav-link" href="#ukanimeconventions">UK Con List</a></li>
+            <li><a class="nav-link" href="#games">Games</a></li>
+            <li><a class="nav-link" href="#latestcosplaynews">Cosplay News</a></li>
+            <li><a class="nav-link" href="#latestanimenews">Anime News</a></li>
+            <li><a class="nav-link" href="#history">History</a></li>                                  
+            <li><a class="nav-link" href="#home">Home</a></li>
+        </div>  
 </ul>
 </nav>
 </header>
 <main>
-<section id="Japanese folk tales.html">
+<section id="japanesefolktales" class="section">
 <div class="Container">
 <div style="text-align: center;">
-    <img src="C:\Users\bluew\Pictures/Japanese-Tales-18-06-2024.gif" width="800" height="148" />
+    <img src="/images/japanesetales.GIF" width="800" height="148" />
 </div>
-
      <h2><u><b>Shirokiya department store fire</h2></u></b>
 <div class="wrap">
-    <img src="C:\Users\bluew\Pictures/lantern  1.png" width="780" height="585" />
+    <img src="/images/lantern.PNG" width="780" height="585" />
 </div>
-<p><b>.Department store:</b> Shirokiya began its life as a dry goods store. It was opened by Hikotaro Omura in Edo in 1662. The store expanded slowly over the centuries. During the Meiji period (1868-1912), Shirokiya opened a western-style department store in downtown Tokyo. From the 1900s to the 1980s, department stores dominated metropolitan consumer culture in Japan. Shirokiya had been rebuilt after the catastrophic 1923 Great Kanto Earthquake.</p>
-<p><b>.The fire:</b> On 16 December 1932, disaster struck again. The store was elaborately decorated for Christmas sales. Early in the morning, a spark from one of the Christmas tree lights landed on a pile celluloid toys and they ignited. The fire spread rapidly, eventually covering floors 4 to 8. The fire ultimately killed 14 people and injured another 67.</p>
-<p><b>.The legend:</b> Several of the saleswomen fled to the roof of the building to get away from the flames. Safety nets were set up so that they could jump of the building and escape the fire. According to legend, the women (wearing kimonos) refused to jump because they were not wearing anything underneath and would have faced serious embarrassment.</p>
-<p>As a result, they died in the flames. The story was picked up by news outlets and spread beyond the borders of Japan. It was even referenced in some fire fighting manuals years later. Management supposedly ordered saleswomen to wear panties. Other versions have saleswomen being encouraged to wear western-style clothing after the incident. In any event, the story of fatal modesty has attracted considerable attention. In reality, however, most of the women on the roof were saved by firefighters.</p>
+<p class="b"><b>Department store:</b> Shirokiya began its life as a dry goods store. It was opened by Hikotaro Omura in Edo in 1662. The store expanded slowly over the centuries. During the Meiji period (1868-1912), Shirokiya opened a western-style department store in downtown Tokyo. From the 1900s to the 1980s, department stores dominated metropolitan consumer culture in Japan. Shirokiya had been rebuilt after the catastrophic 1923 Great Kanto Earthquake.</p>
+<p class="b"><b>The fire:</b> On 16 December 1932, disaster struck again. The store was elaborately decorated for Christmas sales. Early in the morning, a spark from one of the Christmas tree lights landed on a pile celluloid toys and they ignited. The fire spread rapidly, eventually covering floors 4 to 8. The fire ultimately killed 14 people and injured another 67.</p>
+<p class="b"><b>The legend:</b> Several of the saleswomen fled to the roof of the building to get away from the flames. Safety nets were set up so that they could jump of the building and escape the fire. According to legend, the women (wearing kimonos) refused to jump because they were not wearing anything underneath and would have faced serious embarrassment.</p>
+<p class="b">As a result, they died in the flames. The story was picked up by news outlets and spread beyond the borders of Japan. It was even referenced in some fire fighting manuals years later. Management supposedly ordered saleswomen to wear panties. Other versions have saleswomen being encouraged to wear western-style clothing after the incident. In any event, the story of fatal modesty has attracted considerable attention. In reality, however, most of the women on the roof were saved by firefighters.</p>
 
      <h2><u><b>The Haunting of Oiran Buchi, Yamanashi</h2></u></b>
 <div class="wrap">
-    <img src="C:\Users\bluew\Pictures/Kappa.png" width="1000" height="647" />
+    <img src="/images/kappa.PNG" width="1000" height="647" />
 </div>
-<p><b>.Chichibu-Tama-Kai National Park:</b> The park covers over four prefectures in Japan: Saitama, Yamanashi, Nagano and Tokyo. In Yamanashi Prefecture, between the city of Kōshū and the village of Tabayama, just off of an old road that was once a part of National Highway 411, lies a gorge with a beautiful waterfall, called Saiko Waterfall by the locals. To many, this seems like a beautiful area to stop after driving through the Japanese countryside, but you might not want to wander too close, for this is the spot where fifty-five women were killed by Takeda soldiers.</p>
-<p><b>.The history:</b> One of the richest clans in Japan during the Sengoku Jidai was the Takeda. The landlocked province of Kai had to find ways to fund their armies and campaigns, and they found a way to do so: gold. In the hills near Mount Kurokawa, the Takeda clan had a gold mine. Gold had been mined from these hills since the Heian Period (794-1185) and during the Sengoku Jidai, the Takeda took advantage of the mines. This was a major operation which required miners, guards and women to entertain the men during their off hours.</p>
-<p>Not all of the gold that was mined from these hills was used for war. Some were buried in the hills as offerings to the gods, mainly as offerings for good fortune for the Takeda in battle and many believe treasure caches that were also buried in the hills might still be there today. Unfortunately, the offerings could not stop the fall of the Takeda clan.</p>
-<p>While the mine and the clan did well under Takeda Shingen, the Takeda began to decline under his son, Takeda Katsuyori. The clan became a shell of its former self after their devastating defeat at the Battle of Nagashino in 1575. The Takeda clan collapsed entirely with the death of Katsuyori on April 3, 1582, and the race was on to hide family secrets, mainly the gold mines. Even though the mines were beginning to run dry, members of the dying clan were worried about people finding out the location of the mine and the gold caches. To keep information about the gold from spreading, they targeted the women. They were afraid that the prostitutes learned information from the men who worked there, which could be valuable in the wrong hands. So they came up with a plan.</p>
+<p class="b"><b>Chichibu-Tama-Kai National Park:</b> The park covers over four prefectures in Japan: Saitama, Yamanashi, Nagano and Tokyo. In Yamanashi Prefecture, between the city of Kōshū and the village of Tabayama, just off of an old road that was once a part of National Highway 411, lies a gorge with a beautiful waterfall, called Saiko Waterfall by the locals. To many, this seems like a beautiful area to stop after driving through the Japanese countryside, but you might not want to wander too close, for this is the spot where fifty-five women were killed by Takeda soldiers.</p>
+<p class="b"><b>The history:</b> One of the richest clans in Japan during the Sengoku Jidai was the Takeda. The landlocked province of Kai had to find ways to fund their armies and campaigns, and they found a way to do so: gold. In the hills near Mount Kurokawa, the Takeda clan had a gold mine. Gold had been mined from these hills since the Heian Period (794-1185) and during the Sengoku Jidai, the Takeda took advantage of the mines. This was a major operation which required miners, guards and women to entertain the men during their off hours.</p>
+<p class="b">Not all of the gold that was mined from these hills was used for war. Some were buried in the hills as offerings to the gods, mainly as offerings for good fortune for the Takeda in battle and many believe treasure caches that were also buried in the hills might still be there today. Unfortunately, the offerings could not stop the fall of the Takeda clan.</p>
+<p class="b">While the mine and the clan did well under Takeda Shingen, the Takeda began to decline under his son, Takeda Katsuyori. The clan became a shell of its former self after their devastating defeat at the Battle of Nagashino in 1575. The Takeda clan collapsed entirely with the death of Katsuyori on April 3, 1582, and the race was on to hide family secrets, mainly the gold mines. Even though the mines were beginning to run dry, members of the dying clan were worried about people finding out the location of the mine and the gold caches. To keep information about the gold from spreading, they targeted the women. They were afraid that the prostitutes learned information from the men who worked there, which could be valuable in the wrong hands. So they came up with a plan.</p>
 <div class="wrap">
-    <img src="C:\Users\bluew\Pictures/Oni.png" width="590" height="1024" />
+    <img src="/images/oni.PNG" width="590" height="1024" />
 </div>
-<p>A large platform was constructed over the Yanagisawa River, near where it flows into the Ichinose River. Once it was completed, the prostitutes were invited to come and practice a dance for a farewell party. At the height of their dance, soldiers hacked away at the wisteria vines that held up the platform, causing it to collapse. All fifty-five women fell into the gorge below. Some were killed in the initial fall, but the others who survived the fall were swept away and killed when they went over the waterfall. Their bodies were found downstream by the villagers of Tabayama and they were fished out and buried. They later built a monument in memory of the victims.</p>
-<p><b>.Oiran:</b> The name “oiran” is a high class prostitute. They were above common prostitutes, known as yūjo, for while they might have been sex workers (the highest ranking oiran, tayū, might not engage in sex work), they also had talents in traditional arts, and were known to be exclusive and expensive. These ladies would not have entertained miners, but yūjo would have. On top of this, the profession of oiran came about during the Edo Period (1603-1868), years after this incident occurred. Perhaps the name “Oiran Buchi” came about during this era and even though they might have been lower class prostitutes, perhaps the name was given to them out of honor due to the violent nature of their deaths. It is just a theory of mine, but there is another that many historians entertain and that is that the women were not prostitutes at all.</p>
-<p><b>.Takeda Shingen:</b> Under Takeda Shingen, the Takeda clan used female “ninja” to help gather information about their allies. This meant that these ladies not only had information on the enemies of the Takeda clan, but they had information on the Takeda clan as well. Historians have entertained the idea that the death of “prostitutes” might have actually been a cover for killing some of the female ninja that was under the employ of the Takeda clan. The performance would have been a good cover to lure these women to the platform, and the death of these women makes more sense once you change it to “ninjas” instead of “prostitutes”. This is just a theory that has been proposed to explain the deaths of the women, but it still does not explain why the miners and guards were not killed.</p>   
-<p><b>.The hauntings:</b> Oiran Buchi is considered one of Japan’s most haunted places due to the instant and sudden deaths that happened at this location, the land has been “imprinted” by the spirits of those who have died. The activity that has been reported at this location have mainly occurred at night.</p>
-<p>The most common thing that most people experience here are the cries and screams of women falling to their deaths. Singing has also been heard on the bridge where the platform once stood, marking the women’s final moments before they died.</p>
-<p>Those who are able to reach Oiran Buchi are advised to go during the day because one could easily fall off the edge. This is another reason why men are cautioned about going to the area. It is said that the vengeful spirits might retaliate against any men who dare come near the site by pushing them off the edge, making them experience the same fate as them.</p>
-<p>A sign stands near the bridge today as well as a monument. The sign is considered to be haunted and tells the story about what happened at Oiran Buchi, but according to legend, it is said that if you read the sign in its entirely, a curse will be placed upon the reader.</p>
-<p>Despite it being declared a historical site and the part of National Highway 411 that ran near Oiran Buchi was closed years ago due to landslide damage in 2011. The landslide has made haunted site nearly impossible to get to but this has not stopped ghost hunters from making their way to the site, to get a reading from the spirits of Oiran Buchi.</p>
+<p class="b">A large platform was constructed over the Yanagisawa River, near where it flows into the Ichinose River. Once it was completed, the prostitutes were invited to come and practice a dance for a farewell party. At the height of their dance, soldiers hacked away at the wisteria vines that held up the platform, causing it to collapse. All fifty-five women fell into the gorge below. Some were killed in the initial fall, but the others who survived the fall were swept away and killed when they went over the waterfall. Their bodies were found downstream by the villagers of Tabayama and they were fished out and buried. They later built a monument in memory of the victims.</p>
+<p class="b"><b>Oiran:</b> The name “oiran” is a high class prostitute. They were above common prostitutes, known as yūjo, for while they might have been sex workers (the highest ranking oiran, tayū, might not engage in sex work), they also had talents in traditional arts, and were known to be exclusive and expensive. These ladies would not have entertained miners, but yūjo would have. On top of this, the profession of oiran came about during the Edo Period (1603-1868), years after this incident occurred. Perhaps the name “Oiran Buchi” came about during this era and even though they might have been lower class prostitutes, perhaps the name was given to them out of honor due to the violent nature of their deaths. It is just a theory of mine, but there is another that many historians entertain and that is that the women were not prostitutes at all.</p>
+<p class="b"><b>Takeda Shingen:</b> Under Takeda Shingen, the Takeda clan used female “ninja” to help gather information about their allies. This meant that these ladies not only had information on the enemies of the Takeda clan, but they had information on the Takeda clan as well. Historians have entertained the idea that the death of “prostitutes” might have actually been a cover for killing some of the female ninja that was under the employ of the Takeda clan. The performance would have been a good cover to lure these women to the platform, and the death of these women makes more sense once you change it to “ninjas” instead of “prostitutes”. This is just a theory that has been proposed to explain the deaths of the women, but it still does not explain why the miners and guards were not killed.</p>   
+<p class="b"><b>The hauntings:</b> Oiran Buchi is considered one of Japan’s most haunted places due to the instant and sudden deaths that happened at this location, the land has been “imprinted” by the spirits of those who have died. The activity that has been reported at this location have mainly occurred at night.</p>
+<p class="b">The most common thing that most people experience here are the cries and screams of women falling to their deaths. Singing has also been heard on the bridge where the platform once stood, marking the women’s final moments before they died.</p>
+<p class="b">Those who are able to reach Oiran Buchi are advised to go during the day because one could easily fall off the edge. This is another reason why men are cautioned about going to the area. It is said that the vengeful spirits might retaliate against any men who dare come near the site by pushing them off the edge, making them experience the same fate as them.</p>
+<p class="b">A sign stands near the bridge today as well as a monument. The sign is considered to be haunted and tells the story about what happened at Oiran Buchi, but according to legend, it is said that if you read the sign in its entirely, a curse will be placed upon the reader.</p>
+<p class="b">Despite it being declared a historical site and the part of National Highway 411 that ran near Oiran Buchi was closed years ago due to landslide damage in 2011. The landslide has made haunted site nearly impossible to get to but this has not stopped ghost hunters from making their way to the site, to get a reading from the spirits of Oiran Buchi.</p>
  
      <h2><u><b>Doryodo Ruins</h2></u></b>
 <div class="wrap">
-    <img src="C:\Users\bluew\Pictures/snow spirit.png" width="879" height="1500" />
+    <img src="/images/snow spirit.PNG" width="879" height="1500" />
 </div>
-<p><b>.History:</b> Overlooking Hachioji City, about two kilometers
+<p class="b"><b>History:</b> Overlooking Hachioji City, about two kilometers
 from Hachioji Station, is the 213-meter-high hill known as Otsukayama. Set in a clearing among the gnarled, old trees are the ruins of a small temple, Doryodo. The temple was shifted from Asakusa to this site in March 1873, by Watanabe Taijun, who enlisted the financial support of the area’s prosperous silk merchants. At one time, a “silk road” used to run from Hachioji to Yokohama, and along it was transported silk gathered from growers throughout the Kanto plain. Around the turn of the century Doryodo, although small, was a thriving temple backed by the active silk trade.</p>
 
-<p><b>.Asai Toshi:</b> A ghost began to be seen here from 1965, and, even now, people say they can hear a woman’s weeping among the trees. This unhappy spirit is said to belong to Asai Toshi, who died horribly on September 10, 1963, at the age of eighty-two years. The old woman was found murdered inside the main temple building. Her throat was cut, and she had been stabbed through the heart. Her killer had then thrown a cushion over the dead body and made off with about three million yen that Asai Toshi was known
+<p class="b"><b>Asai Toshi:</b> A ghost began to be seen here from 1965, and, even now, people say they can hear a woman’s weeping among the trees. This unhappy spirit is said to belong to Asai Toshi, who died horribly on September 10, 1963, at the age of eighty-two years. The old woman was found murdered inside the main temple building. Her throat was cut, and she had been stabbed through the heart. Her killer had then thrown a cushion over the dead body and made off with about three million yen that Asai Toshi was known
 to have been hoarding.</p>
 
-<p>An illegitimate child, Asai Toshi was twenty-eight yearsold when she entered the Doryodo temple to assume the duties of caretaker. In this role she also told fortunes for the villagers. She also bore several children out of wedlock. Her first son was born in 1918, but he died shortly after birth. Three years later she had a daughter, who also died as a baby. On September 1, 1923, the same day as the Great
+<p class="b">An illegitimate child, Asai Toshi was twenty-eight yearsold when she entered the Doryodo temple to assume the duties of caretaker. In this role she also told fortunes for the villagers. She also bore several children out of wedlock. Her first son was born in 1918, but he died shortly after birth. Three years later she had a daughter, who also died as a baby. On September 1, 1923, the same day as the Great
 Kanto Earthquake, Toshi gave birth to a second daughter whom rumor had it was fathered by the temple’s monk.
 The first person to find Toshi’s dead body was this daughter, Michie, who was forty years old at the time, and she placed her mother’s tomb in the tiny cemetery just behind the temple.</p>
 
-<p>Surrounded by a simple bamboo fence, the cemetery is reached by five deep stone steps. To the right as one enters is a headstone for dogs and cats, and inside are eleven memorial stones, including one raised by Asai Toshi in memory of the temple’s founder, who died at the age of eighty-four on October 8, 1916. A marble, two-tiered stone topped by a globe of the same material marks the grave of Asai Toshi. Beside it is the waiting grave of her still living daughter, Michie. Her name is carved on the stone in red to indicate that she is still alive. When she dies, the engraving will be colored black. There is also a grave for
+<p class="b">Surrounded by a simple bamboo fence, the cemetery is reached by five deep stone steps. To the right as one enters is a headstone for dogs and cats, and inside are eleven memorial stones, including one raised by Asai Toshi in memory of the temple’s founder, who died at the age of eighty-four on October 8, 1916. A marble, two-tiered stone topped by a globe of the same material marks the grave of Asai Toshi. Beside it is the waiting grave of her still living daughter, Michie. Her name is carved on the stone in red to indicate that she is still alive. When she dies, the engraving will be colored black. There is also a grave for
 the girl and boy who died shortly after birth, as well as a large stone for the entire Asai family. But peace seems to be difficult for the restless spirit of Asai Toshi, whose body in the world of the living met such a violent death.</p>
 
-<p><b>.Murdered University student:</b> Ten years later Doryodotemple was closed and largely forgotten until 1973, when the body of a missing Rikkyo University student was found near there (within 2 km of the temple). According to the news at the time, the victim was killed by her lover and professor Hiroshi Oba. His motivation for murder was due to the fact that their relationship became public and hide her body within the temple grounds. After he murdered the student, Hiroshi Oba went on to murdered his own wife and children before committing suicide. Her body wasn’t discovered until several months after the murder-suicide took place, which itself was a major scandal. The student who was unnamed in most sources had allegedly been pregnant and missing since July of that year. In 1983 the abandoned Doryodo temple was finally destroyed, and in 1990 Hachioji City designated it and the surrounding hillside as Otsukayama Park.</p>
+<p class="b"><b>Murdered University student:</b> Ten years later Doryodotemple was closed and largely forgotten until 1973, when the body of a missing Rikkyo University student was found near there (within 2 km of the temple). According to the news at the time, the victim was killed by her lover and professor Hiroshi Oba. His motivation for murder was due to the fact that their relationship became public and hide her body within the temple grounds. After he murdered the student, Hiroshi Oba went on to murdered his own wife and children before committing suicide. Her body wasn’t discovered until several months after the murder-suicide took place, which itself was a major scandal. The student who was unnamed in most sources had allegedly been pregnant and missing since July of that year. In 1983 the abandoned Doryodo temple was finally destroyed, and in 1990 Hachioji City designated it and the surrounding hillside as Otsukayama Park.</p>
 
-<p>Some believe you can still hear the student whispering in the grounds, while others say that you can hear the old woman crying and begging for forgiveness for not protecting the temple. Visitors to the park and that area specifically state that the whole temple area feels gloomy even on a sunny day.</p>
+<p class="b">Some believe you can still hear the student whispering in the grounds, while others say that you can hear the old woman crying and begging for forgiveness for not protecting the temple. Visitors to the park and that area specifically state that the whole temple area feels gloomy even on a sunny day.</p>
 
     <h2><u><b>Inunaki Village</h2></u></b>
 
-<p><b>.The beginning:</b> The Inunaki Village is a Japanese urban legend dating back to the 1990s, about a supposed village in Fukuoka Prefecture, whose aggressive residents refuse to follow the rules of the Japanese constitution. The village is said to be located in the vicinity of Mount Inunaki, near the Inunaki mountain pass, however its exact location is unknown. A real Inunaki Village, not connected to the legend, did exist from 1691 to 1889.</p>
+<p class="b"><b>The beginning:</b> The Inunaki Village is a Japanese urban legend dating back to the 1990s, about a supposed village in Fukuoka Prefecture, whose aggressive residents refuse to follow the rules of the Japanese constitution. The village is said to be located in the vicinity of Mount Inunaki, near the Inunaki mountain pass, however its exact location is unknown. A real Inunaki Village, not connected to the legend, did exist from 1691 to 1889.</p>
 
-<p><b>.The real village history:</b> According to historical records written during the Edo Period, the real Inunaki Village, officially referred to as Inunakidani Village, was established by a dispatch group of the Fukuoka Domain in 1691. Bunnai Shinozaki was appointed as the village headman. The village's sources of income were producing ceramic products and steel manufacturing. A coal mine was established here later and a castle called Inunaki Gobekkan was founded in 1865 under the recommendation of Kato Shisho.</p>
+<p class="b"><b>The real village history:</b> According to historical records written during the Edo Period, the real Inunaki Village, officially referred to as Inunakidani Village, was established by a dispatch group of the Fukuoka Domain in 1691. Bunnai Shinozaki was appointed as the village headman. The village's sources of income were producing ceramic products and steel manufacturing. A coal mine was established here later and a castle called Inunaki Gobekkan was founded in 1865 under the recommendation of Kato Shisho.</p>
 
-<p>In April 1889, due to the introduction of the town and village system, Inunakidani was integrated into the nearby Yoshikawa Village, which over the years merged with other areas, eventually creating the city of Miyawaka. The site of Inunakidani was submerged in 1986, due to the construction of the Inunaki Dam (completed in 1994). Residents of the village were relocated to Wakita.</p>
+<p class="b">In April 1889, due to the introduction of the town and village system, Inunakidani was integrated into the nearby Yoshikawa Village, which over the years merged with other areas, eventually creating the city of Miyawaka. The site of Inunakidani was submerged in 1986, due to the construction of the Inunaki Dam (completed in 1994). Residents of the village were relocated to Wakita.</p>
    
-<p><b>.Legend:</b> According to the legend, Inunaki is a "small and easy to miss" village in a forest located in Fukuoka Prefecture, to the east of the Inunaki Mountain next to the most upstream tributary of Inunaki Gawa and the western edge of Wakamiya. The residents of the village refused to accept the Constitution of Japan, and extant the legitimacy of the Japanese government. Near the entrance to the village, there's a handwritten sign reading "The Japanese constitution is not in effect past here." In order to find the village, one must take a small side road past Old Inunaki Tunnel. The original story takes place "sometime in the early 1970s" and follows a young couple, who were on their way to Hisayama when unexpectedly their car engine broke. They left their car and headed up the forest to seek help. They eventually entered a village that seemed abandoned. They were approached by a "crazy old man" who welcomed them to Inunaki before murdering them with a sickle.</p>
+<p class="b"><b>Legend:</b> According to the legend, Inunaki is a "small and easy to miss" village in a forest located in Fukuoka Prefecture, to the east of the Inunaki Mountain next to the most upstream tributary of Inunaki Gawa and the western edge of Wakamiya. The residents of the village refused to accept the Constitution of Japan, and extant the legitimacy of the Japanese government. Near the entrance to the village, there's a handwritten sign reading "The Japanese constitution is not in effect past here." In order to find the village, one must take a small side road past Old Inunaki Tunnel. The original story takes place "sometime in the early 1970s" and follows a young couple, who were on their way to Hisayama when unexpectedly their car engine broke. They left their car and headed up the forest to seek help. They eventually entered a village that seemed abandoned. They were approached by a "crazy old man" who welcomed them to Inunaki before murdering them with a sickle.</p>
 
-<p>There's another story related to the village, which tells of a telephone booth near the Inunaki bridge, which allegedly gets a call coming from Inunaki Village every night. The person that answers that call will be cursed and transported to the village. The victim of the curse will start to lose control of their body and mind before eventually dying.</p>
+<p class="b">There's another story related to the village, which tells of a telephone booth near the Inunaki bridge, which allegedly gets a call coming from Inunaki Village every night. The person that answers that call will be cursed and transported to the village. The victim of the curse will start to lose control of their body and mind before eventually dying.</p>
 
-<p><b>.The legend spreads:</b> The area of the Old Inunaki Tunnel has been considered to be haunted due to a number of murder cases connected to this place. The tunnel's construction was completed in 1949. A new tunnel was constructed nearby in 1975. The unused old tunnel became dangerous due to a lack of maintenance. On 6 December 1988, five young men abducted and tortured a factory worker whose car they wanted to steal, burning him to death with gasoline inside the old tunnel. The perpetrators were arrested and sentenced to life imprisonment. The entrance to the old tunnel has been made inaccessible from both sides. In 2000, a dead body was found in a nearby dam.</p>
+<p class="b"><b>The legend spreads:</b> The area of the Old Inunaki Tunnel has been considered to be haunted due to a number of murder cases connected to this place. The tunnel's construction was completed in 1949. A new tunnel was constructed nearby in 1975. The unused old tunnel became dangerous due to a lack of maintenance. On 6 December 1988, five young men abducted and tortured a factory worker whose car they wanted to steal, burning him to death with gasoline inside the old tunnel. The perpetrators were arrested and sentenced to life imprisonment. The entrance to the old tunnel has been made inaccessible from both sides. In 2000, a dead body was found in a nearby dam.</p>
 
-<p>The first online mentions of the Inunaki Village urban legend date back to 1999, when Nippon TV received a letter from an anonymous person, which described the legend of the couple murdered in the village and urged the Nippon TV crew to visit the place. The anonymous letter was titled "The Village in Japan That Isn't Part of Japan".</p>
+<p class="b">The first online mentions of the Inunaki Village urban legend date back to 1999, when Nippon TV received a letter from an anonymous person, which described the legend of the couple murdered in the village and urged the Nippon TV crew to visit the place. The anonymous letter was titled "The Village in Japan That Isn't Part of Japan".</p>
 
   <h2><u><b>Human sacrifice</h2></u></b>
 <div class="wrap">
-    <img src="C:\Users\bluew\Pictures/yokai.png" width="1024" height="756" />
+    <img src="/images/yokai.PNG" width="1024" height="756" />
 </div>
-<p><b>.Da sheng zhuang:</b> Legend has it that the practice of da sheng zhuang was first proposed by Lu Ban. It was believed that the moving of soil during large scale construction would destroy the feng shui of the land, and anger the ghosts of people who have died unjustly, causing accidents during construction. Da sheng zhuang was proposed to suppress such evils, and reduce the number of incidents during construction.</p>
+<p class="b"><b>Da sheng zhuang:</b> Legend has it that the practice of da sheng zhuang was first proposed by Lu Ban. It was believed that the moving of soil during large scale construction would destroy the feng shui of the land, and anger the ghosts of people who have died unjustly, causing accidents during construction. Da sheng zhuang was proposed to suppress such evils, and reduce the number of incidents during construction.</p>
 
-<p>However, the earliest archeological evidence of da sheng zhuang is a case discovered in the Dongzhao excavation in Zhengzhou, Henan Province, where the remains of an infant used in the foundation of the Erlitou culture city were found.</p>
+<p class="b">However, the earliest archeological evidence of da sheng zhuang is a case discovered in the Dongzhao excavation in Zhengzhou, Henan Province, where the remains of an infant used in the foundation of the Erlitou culture city were found.</p>
 
-<p>There is also a legend that the construction of bridges in the ancient era required the sacrifices of both a young girl and a boy. The boy would be buried within a pier at the front of the bridge, while the girl would be buried within the pier at the back of the bridge.</p>
+<p class="b">There is also a legend that the construction of bridges in the ancient era required the sacrifices of both a young girl and a boy. The boy would be buried within a pier at the front of the bridge, while the girl would be buried within the pier at the back of the bridge.</p>
 
-<p>During the reign of Chunghye of Goryeo, a rumour spread within the capital city of Kaesong that he had planned to sacrifice dozens of infants as a foundation for a his new palace, causing chaos as the people of Kaesong fled en masse.</p>
+<p class="b">During the reign of Chunghye of Goryeo, a rumour spread within the capital city of Kaesong that he had planned to sacrifice dozens of infants as a foundation for a his new palace, causing chaos as the people of Kaesong fled en masse.</p>
 
-<p>During the construction of a levee at Dahu Park in Taiwan under Qing rule, it is said that there was a live burial of an elderly beggar. The temple set up for him, Laogongci, can still be visited today.</p>
+<p class="b">During the construction of a levee at Dahu Park in Taiwan under Qing rule, it is said that there was a live burial of an elderly beggar. The temple set up for him, Laogongci, can still be visited today.</p>
 
-<p>There are rumours that daa saang zong was prevalent in pre-WWII Hong Kong. The phrase 'daa saang zong' was used by parents in Hong Kong during the 1930s to scare disobedient children. In 2006, discussion regarding daa saang zong was reignited when a large number of infant remains were discovered during water pipe laying at Princess Margaret Road, Ho Man Tin. However, the area around Ho Man Tin used to house Chinese and Muslim cemeteries which were since moved, and it has been said that the infant remains were not from incidents of daa saang zong, but rather remains that were not relocated.</p>
+<p class="b">There are rumours that daa saang zong was prevalent in pre-WWII Hong Kong. The phrase 'daa saang zong' was used by parents in Hong Kong during the 1930s to scare disobedient children. In 2006, discussion regarding daa saang zong was reignited when a large number of infant remains were discovered during water pipe laying at Princess Margaret Road, Ho Man Tin. However, the area around Ho Man Tin used to house Chinese and Muslim cemeteries which were since moved, and it has been said that the infant remains were not from incidents of daa saang zong, but rather remains that were not relocated.</p>
 
-<p>Ex-head of Tin Tin Daily News, Wai Kee-shun, claimed that the construction of Haizhu Bridge, Guangzhou involved the practice of daa saang zong.</p>
+<p class="b">Ex-head of Tin Tin Daily News, Wai Kee-shun, claimed that the construction of Haizhu Bridge, Guangzhou involved the practice of daa saang zong.</p>
 
-<p>Following the modernization of Asia, some areas started using the sacrifice of chicken as an alternative to da sheng zhuang.</p>
+<p class="b">Following the modernization of Asia, some areas started using the sacrifice of chicken as an alternative to da sheng zhuang.</p>
 
-<p><b>.Hitobashira:</b> Is a cultural practice of human sacrifice in East and Southeast Asia of premature burial before the construction of buildings. Hitobashira was practiced formerly in Japan as a form of human sacrifice. A person was buried alive under or near large-scale buildings like dams, bridges and castles, as a prayer to Shinto gods. It was believed this would protect the building from being destroyed by natural disasters such as floods or by enemy attacks. Hitobashira can also refer to workers who were buried alive under inhumane conditions.</p>
+<p class="b"><b>Hitobashira:</b> Is a cultural practice of human sacrifice in East and Southeast Asia of premature burial before the construction of buildings. Hitobashira was practiced formerly in Japan as a form of human sacrifice. A person was buried alive under or near large-scale buildings like dams, bridges and castles, as a prayer to Shinto gods. It was believed this would protect the building from being destroyed by natural disasters such as floods or by enemy attacks. Hitobashira can also refer to workers who were buried alive under inhumane conditions.</p>
 
-<p>Some of the earliest written records of hitobashira can be found in the Nihon Shoki (The Chronicles of Japan). One story centered on Emperor Nintoku (323 A.D.) discusses the overflowing of the Kitakawa and Mamuta Rivers. Protection against the torrent was beyond the ability of the stricken populace. The Emperor had a divine revelation in his dream to the effect that there was a person named Kowakubi in the province of Musashi and a person called Koromono-ko in the province of Kawachi. If they should be sacrificed to deities of the two rivers respectively, then the construction of embankments would be easily achieved. Kowakubi was subsequently thrown into the torrent of the Kitakawa river, with a prayer offered. After the sacrifice the embankment was constructed, Koromono-ko however escaped being sacrificed.</p>
+<p class="b">Some of the earliest written records of hitobashira can be found in the Nihon Shoki (The Chronicles of Japan). One story centered on Emperor Nintoku (323 A.D.) discusses the overflowing of the Kitakawa and Mamuta Rivers. Protection against the torrent was beyond the ability of the stricken populace. The Emperor had a divine revelation in his dream to the effect that there was a person named Kowakubi in the province of Musashi and a person called Koromono-ko in the province of Kawachi. If they should be sacrificed to deities of the two rivers respectively, then the construction of embankments would be easily achieved. Kowakubi was subsequently thrown into the torrent of the Kitakawa river, with a prayer offered. After the sacrifice the embankment was constructed, Koromono-ko however escaped being sacrificed.</p>
 
-<p>The Yasutomi-ki, a diary from the 15th century, documents the famous tradition of "Nagara-no Hitobashira". According to the tradition, a woman who was carrying a boy on her back was caught while she was passing along the river Nagara and was buried at the place where a large bridge was then to be built. Hitobashira traditions were almost always practiced in conjunction with the building of complex, dangerous, often water-related projects, such as bridges. The stories of hitobashira were believed to inspire a spirit of self-sacrifice in people.</p>
+<p class="b">The Yasutomi-ki, a diary from the 15th century, documents the famous tradition of "Nagara-no Hitobashira". According to the tradition, a woman who was carrying a boy on her back was caught while she was passing along the river Nagara and was buried at the place where a large bridge was then to be built. Hitobashira traditions were almost always practiced in conjunction with the building of complex, dangerous, often water-related projects, such as bridges. The stories of hitobashira were believed to inspire a spirit of self-sacrifice in people.</p>
 
-<p><b>.Maruoka Castle:</b> Is one of the oldest surviving castles in Japan and is rumored to have been constructed with a human pillar which can be found in the legend of "O-shizu, Hitobashira".</p>
+<p class="b"><b>Maruoka Castle:</b> Is one of the oldest surviving castles in Japan and is rumored to have been constructed with a human pillar which can be found in the legend of "O-shizu, Hitobashira".</p>
 
-<p>When Shibata Katsutoyo, the nephew of Shibata Katsuie, was building a castle in Maruoka, the stone wall of the castle kept collapsing no matter how many times it was piled up. There was one vassal who suggested that they should make someone a human sacrifice. O-shizu, a one-eyed woman who had two children and lived a poor life, was selected as the Hitobashira. She resolved to become one on the condition that one of her children be made a samurai. She was buried under the central pillar of the castle keep. Soon after that the construction of the castle keep was successfully completed. But Katsutoyo was transferred to another province and her son was not made a samurai.</p>
+<p class="b">When Shibata Katsutoyo, the nephew of Shibata Katsuie, was building a castle in Maruoka, the stone wall of the castle kept collapsing no matter how many times it was piled up. There was one vassal who suggested that they should make someone a human sacrifice. O-shizu, a one-eyed woman who had two children and lived a poor life, was selected as the Hitobashira. She resolved to become one on the condition that one of her children be made a samurai. She was buried under the central pillar of the castle keep. Soon after that the construction of the castle keep was successfully completed. But Katsutoyo was transferred to another province and her son was not made a samurai.</p>
 
-<p>Her spirit felt resentful and made the moat overflow with spring rain when the season of cutting algae came in April every year. People called it, "the rain caused by the tears of O-shizu's sorrow" and erected a small tomb to soothe her spirit. There was a poem handed down, "The rain which falls when the season of cutting algae comes Is the rain reminiscent of the tears of the poor O-shizu's sorrow". It has been commented that the instability of the walls of Maruoka Castle was likely caused by the design of the castle. Although built in the Momoyama period (1575-1600) the design is more indicative of earlier fortresses, the steep base features random-style stone piling which is suggested as the source of instability in the walls which may have led to the use of a human pillar during its construction.</p>
+<p class="b">Her spirit felt resentful and made the moat overflow with spring rain when the season of cutting algae came in April every year. People called it, "the rain caused by the tears of O-shizu's sorrow" and erected a small tomb to soothe her spirit. There was a poem handed down, "The rain which falls when the season of cutting algae comes Is the rain reminiscent of the tears of the poor O-shizu's sorrow". It has been commented that the instability of the walls of Maruoka Castle was likely caused by the design of the castle. Although built in the Momoyama period (1575-1600) the design is more indicative of earlier fortresses, the steep base features random-style stone piling which is suggested as the source of instability in the walls which may have led to the use of a human pillar during its construction.</p>
 
-<p><b>.Matsue Ohashi Bridge:</b> The Matsue Ohashi Bridge according to legend used a human sacrifice in its construction. The nearby park is named Gensuke in honour of the human sacrifice along with a memorial dedicated to the victims who died during the bridge's construction.</p>
+<p class="b"><b>Matsue Ohashi Bridge:</b> The Matsue Ohashi Bridge according to legend used a human sacrifice in its construction. The nearby park is named Gensuke in honour of the human sacrifice along with a memorial dedicated to the victims who died during the bridge's construction.</p>
 
-<p>When Horio Yoshiharu, the great general who became daimyō of Izumo in the Keichō era, first undertook to put a bridge over the mouth of this river, the builders laboured in vain; for there appeared to be no solid bottom for the pillars of the bridge to rest upon. Millions of great stones were cast into the river to no purpose, for the work constructed by day was swept away or swallowed up by night. Nevertheless, at last the bridge was built, but the pillars began to sink soon after it was finished; then a flood carried half of it away and as often as it was repaired so often it was wrecked. It was then decided that a human sacrifice would be made to appease the vexed spirits of the flood. It was determined that the first man who should cross the bridge wearing a hakama without a machi should be put under the bridge.</p>
+<p class="b">When Horio Yoshiharu, the great general who became daimyō of Izumo in the Keichō era, first undertook to put a bridge over the mouth of this river, the builders laboured in vain; for there appeared to be no solid bottom for the pillars of the bridge to rest upon. Millions of great stones were cast into the river to no purpose, for the work constructed by day was swept away or swallowed up by night. Nevertheless, at last the bridge was built, but the pillars began to sink soon after it was finished; then a flood carried half of it away and as often as it was repaired so often it was wrecked. It was then decided that a human sacrifice would be made to appease the vexed spirits of the flood. It was determined that the first man who should cross the bridge wearing a hakama without a machi should be put under the bridge.</p>
 
-<p>A man named Gensuke, who lived on Saikamachi street, passed over the bridge without a machi in his hakama and was taken to be sacrificed. Gensuke was buried alive in the river-bed below the place of the middle pillar, where the current is most treacherous, and thereafter the bridge remained immovable for three hundred years. The middle-most pillar of the bridge was for three hundred years called by his name: "Gensuke-bashira". Some believe the name Gensuke was not the name of a man but the name of an era, corrupted by local dialect. The legend is so profoundly believed, that when the new bridge was built in 1891, many local rural residents were afraid to come to town due to rumors that a new victim was needed, and would be chosen from among them.</p>
+<p class="b">A man named Gensuke, who lived on Saikamachi street, passed over the bridge without a machi in his hakama and was taken to be sacrificed. Gensuke was buried alive in the river-bed below the place of the middle pillar, where the current is most treacherous, and thereafter the bridge remained immovable for three hundred years. The middle-most pillar of the bridge was for three hundred years called by his name: "Gensuke-bashira". Some believe the name Gensuke was not the name of a man but the name of an era, corrupted by local dialect. The legend is so profoundly believed, that when the new bridge was built in 1891, many local rural residents were afraid to come to town due to rumors that a new victim was needed, and would be chosen from among them.</p>
 
-<p><b>.Matsue Castle</b>: According to legend the Matsue Castle is also said to have been constructed on a human sacrifice that was buried under the castle's stone walls. Her name has never been recorded, and nothing concerning her is remembered except that she is thought to have been a beautiful young maiden who was fond of dancing and is referred to as simply the maiden of Matsue. After the castle was built, a law was passed forbidding any girl to dance in the streets of Matsue because the hill Oshiroyama would shudder and the castle would shake from "top to bottom".</p>
-<div style="text-align: center;">
-    <img src="C:\Users\bluew\Pictures/shenron.png" width="1024" height="768" />
-</div>
-</body>
+<p class="b"><b>Matsue Castle</b>: According to legend the Matsue Castle is also said to have been constructed on a human sacrifice that was buried under the castle's stone walls. Her name has never been recorded, and nothing concerning her is remembered except that she is thought to have been a beautiful young maiden who was fond of dancing and is referred to as simply the maiden of Matsue. After the castle was built, a law was passed forbidding any girl to dance in the streets of Matsue because the hill Oshiroyama would shudder and the castle would shake from "top to bottom".</p>
 </section>
+</main>
+<script>
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.classList.add('active');
+            }
+        });
+    });
+</script>
+</body>
 </html>
